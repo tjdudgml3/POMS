@@ -1,4 +1,4 @@
-# POMS (Formerly ANN-SoLo)
+# POMS
 
 ![POMS Algorithm Diagram](ann-solo.png)
 
