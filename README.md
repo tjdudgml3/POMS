@@ -3,7 +3,7 @@
 ![POMS Overview Workflow](images/workflow.png)
 *Figure 1. Overview of the POMS framework. Overall workflow integrating complementary spectral representations and sequence-derived theoretical fragment features for efficient and comprehensive candidate retrieval.*
 
-**POMS** (**P**osition aware **O**pen **M**odification **S**earch) is a spectral library search engine for fast and accurate open modification searching, adapted from the ANN-SoLo codebase for advanced spectral analysis. POMS uses approximate nearest neighbor indexing to speed up open modification searching by quickly selecting only the most relevant library spectra to compare against an unknown query spectrum.
+**POMS** (**P**osition aware **O**pen **M**odification **S**earch) is a spectral library search engine for fast and accurate open modification searching, adapted from the ANN-SoLo codebase for advanced spectral analysis. POMS is a novel spectral library search engine designed to overcome the mass-shift alignment problem in open modification searching. POMS achieves this through a unique dual-embedding strategy that integrates sequence-derived theoretical features with experimental spectra. To accurately capture potential modification positions, POMS generates complementary spectra and performs parallel searches across four distinct spectral vector databases (original, weighted original, complementary, and weighted complementary). This modification-aware architecture enables highly sensitive and comprehensive candidate retrieval.
 
 ## Core Methodology: Modification-Aware Spectral Representation
 
