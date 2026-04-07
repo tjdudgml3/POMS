@@ -1,8 +1,18 @@
 # POMS
 
-![POMS Algorithm Diagram](ann-solo.png)
+![POMS Overview Workflow](images/workflow.png)
+*Figure 1. Overview of the POMS framework. Overall workflow integrating complementary spectral representations and sequence-derived theoretical fragment features for efficient and comprehensive candidate retrieval.*
 
 **POMS** (**P**osition aware **O**pen **M**odification **S**earch) is a spectral library search engine for fast and accurate open modification searching, adapted from the ANN-SoLo codebase for advanced spectral analysis. POMS uses approximate nearest neighbor indexing to speed up open modification searching by quickly selecting only the most relevant library spectra to compare against an unknown query spectrum.
+
+## Core Methodology: Modification-Aware Spectral Representation
+
+Unlike traditional open search tools that struggle with mass-shifted peaks, POMS employs a novel dual-embedding strategy. 
+
+![Modification-aware Spectral Representation](images/three_comparison.png)
+*Figure 2. Modification-aware spectral representations and the dual-embedding strategy. (A) Query original peak vs. Library original peak. (B) Illustration of complementary spectrum generation, aligning modification-shifted peaks. (C) Conceptual illustration of the dual-embedding strategy, combining both original and complementary peaks compared against sequence-derived theoretical peaks.*
+
+By generating complementary spectral representations and matching them concurrently across 4 distinct vector spaces, POMS successfully preserves local fragmentation patterns and captures global peptide backbone similarity, effectively resolving the mass-shift alignment problem.
 
 ## Requirements and Installation
 
